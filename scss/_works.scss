@@ -1,0 +1,51 @@
+// works section
+
+.works-wrapper {
+   margin-top: 80px;
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 70px;
+}
+
+.works-item {
+   flex-basis: 25%;
+
+}
+
+.works {
+
+   &__img {}
+
+   &__title {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #010101;
+   }
+
+   &__subtitle {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #898989;
+   }
+}
+
+@media(max-width:768px) {
+   .works-item {
+      flex-basis: 50%;
+      text-align: center;
+   }
+}
+
+@media(max-width:576px) {
+   .works-item {
+      flex-basis: 100%;
+
+   }
+}
